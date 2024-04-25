@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVENTURE</title>
+    <!-- ==== CSS ==== -->
+    <link rel="stylesheet" href="./learning_c.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">BizWiz</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="#"></a>Tours</li>
+            <li><a href="#"></a>Explore</li>
+            <li><a href="#"></a>About</li>
+            <li class="ctn"><a  href="#"></a>Contact</li>
+        </ul>
+       <div class="mobile-nav">
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+        <h1 class="close-btn">X</h1>
+       </div>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Welcome to our Learning Hub, Where Financial empowerment begins!</h2>
+            <div class="line"></div>
+            <h1>Where would you like to begin?</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- == Events == Courses-->
+    <section class="courses">
+        <div class="title">
+            <h1>Courses</h1>
+            <div class="line"></div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img src="images/businesscoursepic.jpeg" alt="Businessman pushing the credit score speedometer from poor to good">
+                <h4>Credit Essentials: Understanding Credit and Empowering your Financial Decisions</h4>
+               <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui, iure possimus libero expedita incidunt!</p>-->
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+
+            <div class="col">
+                <img src="images/taxescoursepic.jpeg" alt="taxes concept" height="100px" width="100px">
+                <h4>Tax Time Toolkit: Everything You Need to Know About Filing</h4>
+                <!--<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui, iure possimus libero expedita incidunt!</p>-->
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+
+            <div class="col">
+                <img src="./images/homebuyingcoursepic.jpeg" alt="Animated family in front of a house"  height="100px" width="100px">
+                <h4>Path to Homeownership: Essential Steps for First-Time Buyers</h4>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            
+            <div class="col">
+                <img src="./images/businesscoursepic.jpeg" alt="Woman Business owner with her team"  height="100px" width="100px">
+                <h4>Startup Success: Building Your Business from the Ground Up</h4>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+    </section>
+
+    <section class="explore">
+      <div class="explore-content">
+        <h1>EXPLORE THE WORLD</h1>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, repellendus sapiente ipsa reprehenderit suscipit iusto odit corrupti, quam velit eligendi laboriosam aspernatur tempore quaerat voluptate.</p>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+    </section>
+
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>UPCOMING TOURS & DESTINATION</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quo dignissimos eius quidem culpa, beatae quasi ea cum minima reiciendis ut molestiae consequuntur doloribus aperiam neque eaque, at placeat natus.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./images/img1.jpeg" alt="">
+                    <img src="./images/img2.jpeg" alt="">
+                    <img src="./images/img3.jpeg" alt="">
+                    <img src="./images/img4.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 | Email: contact@example.com</p>
+        <p>Copyright © 2020 Outdoor Adventure</p>
+    </section>
+
+    <script>
+        const mobileNav = document.querySelector('.mobile-nav')
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        const closeBtn = document.querySelector('.close-btn')
+
+        mobileNav.addEventListener('click',(e)=>{
+            navlinks.classList.toggle('mobile-menu')
+            if(e.target === menuBtn){
+                menuBtn.replaceWith(closeBtn)
+                closeBtn.style.display = 'block'
+            }
+            if(e.target === closeBtn){
+                closeBtn.replaceWith(menuBtn)
+            }
+        })
+    </script>
+</body>
+</html>
